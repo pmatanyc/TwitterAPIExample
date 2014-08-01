@@ -19,6 +19,9 @@
 		B2613C4B197EE0BF0023E891 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2613C33197EE0BF0023E891 /* UIKit.framework */; };
 		B2613C53197EE0BF0023E891 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2613C51197EE0BF0023E891 /* InfoPlist.strings */; };
 		B2613C55197EE0BF0023E891 /* PMSocialFrameworksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2613C54197EE0BF0023E891 /* PMSocialFrameworksTests.m */; };
+		B2613C61197EE0E40023E891 /* PMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2613C5F197EE0E40023E891 /* PMViewController.m */; };
+		B2613C62197EE0E40023E891 /* PMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2613C60197EE0E40023E891 /* PMViewController.xib */; };
+		B2613C64197EF3D60023E891 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2613C63197EF3D60023E891 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		B2613C50197EE0BF0023E891 /* PMSocialFrameworksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PMSocialFrameworksTests-Info.plist"; sourceTree = "<group>"; };
 		B2613C52197EE0BF0023E891 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B2613C54197EE0BF0023E891 /* PMSocialFrameworksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMSocialFrameworksTests.m; sourceTree = "<group>"; };
+		B2613C5E197EE0E40023E891 /* PMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMViewController.h; sourceTree = "<group>"; };
+		B2613C5F197EE0E40023E891 /* PMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMViewController.m; sourceTree = "<group>"; };
+		B2613C60197EE0E40023E891 /* PMViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMViewController.xib; sourceTree = "<group>"; };
+		B2613C63197EF3D60023E891 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2613C64197EF3D60023E891 /* Social.framework in Frameworks */,
 				B2613C32197EE0BF0023E891 /* CoreGraphics.framework in Frameworks */,
 				B2613C34197EE0BF0023E891 /* UIKit.framework in Frameworks */,
 				B2613C30197EE0BF0023E891 /* Foundation.framework in Frameworks */,
@@ -96,6 +104,7 @@
 		B2613C2E197EE0BF0023E891 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2613C63197EF3D60023E891 /* Social.framework */,
 				B2613C2F197EE0BF0023E891 /* Foundation.framework */,
 				B2613C31197EE0BF0023E891 /* CoreGraphics.framework */,
 				B2613C33197EE0BF0023E891 /* UIKit.framework */,
@@ -109,6 +118,9 @@
 			children = (
 				B2613C3E197EE0BF0023E891 /* PMAppDelegate.h */,
 				B2613C3F197EE0BF0023E891 /* PMAppDelegate.m */,
+				B2613C5E197EE0E40023E891 /* PMViewController.h */,
+				B2613C5F197EE0E40023E891 /* PMViewController.m */,
+				B2613C60197EE0E40023E891 /* PMViewController.xib */,
 				B2613C41197EE0BF0023E891 /* Images.xcassets */,
 				B2613C36197EE0BF0023E891 /* Supporting Files */,
 			);
@@ -219,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2613C62197EE0E40023E891 /* PMViewController.xib in Resources */,
 				B2613C3A197EE0BF0023E891 /* InfoPlist.strings in Resources */,
 				B2613C42197EE0BF0023E891 /* Images.xcassets in Resources */,
 			);
@@ -240,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2613C3C197EE0BF0023E891 /* main.m in Sources */,
+				B2613C61197EE0E40023E891 /* PMViewController.m in Sources */,
 				B2613C40197EE0BF0023E891 /* PMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +377,7 @@
 				GCC_PREFIX_HEADER = "PMSocialFrameworks/PMSocialFrameworks-Prefix.pch";
 				INFOPLIST_FILE = "PMSocialFrameworks/PMSocialFrameworks-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -376,6 +391,7 @@
 				GCC_PREFIX_HEADER = "PMSocialFrameworks/PMSocialFrameworks-Prefix.pch";
 				INFOPLIST_FILE = "PMSocialFrameworks/PMSocialFrameworks-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

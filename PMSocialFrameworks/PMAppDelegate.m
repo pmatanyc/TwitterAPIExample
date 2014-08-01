@@ -7,6 +7,7 @@
 //
 
 #import "PMAppDelegate.h"
+#import "PMViewController.h"
 
 @implementation PMAppDelegate
 
@@ -14,6 +15,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    UIViewController *mainVC = [[PMViewController alloc]initWithNibName:@"PMViewController" bundle:nil];
+    self.window.rootViewController = mainVC;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
